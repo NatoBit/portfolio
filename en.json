@@ -1,0 +1,18 @@
+{
+    "menuInicio": "Home",
+    "menuSobreMi": "About Me",
+    "menuProyectos": "Projects",
+    "homeContentH1": "Hi! I'm",
+    "homeContentH2": "A <span class='proffesions'>Data Analyst</span> and <span class='proffesions'>Software Developer</span>",
+    "homeContentP": "Data analyst with experience in Machine Learning and Artificial Intelligence applied to data analysis in production environments. Passionate about collaboration and continuous learning.",
+    "aboutMeH1": "About Me",
+    "aboutMeP1": "I am a Data Analyst and Developer with a focus on Machine Learning and Artificial Intelligence, with experience in data analysis in production environments. I am fluent in Python, statistical modeling, and data visualization, always committed to staying up to date with the latest industry trends.",
+    "aboutMeP2": "I value teamwork and collaboration, and I am passionate about contributing to impactful solutions. Additionally, I enjoy supporting and teaching others as we drive innovation in data science.",
+    "liPais": "<span>Country: </span>Mexico",
+    "liIdiomas": "<span>Languages: </span>Spanish, English (C1), German (B2), French (B2)",
+    "liHerramientas": "Tools: ",
+    "liLenProg": "Programming Languages: ",
+    "liRedes": "Social Media: ",
+    "habilidadesH2": "Skills",
+    "foot": "© 2024 My Portfolio. All rights reserved."
+}

@@ -1,0 +1,18 @@
+{
+    "menuInicio": "Inicio",
+    "menuSobreMi": "Sobre Mí",
+    "menuProyectos": "Proyectos",
+    "homeContentH1": "Hola soy",
+    "homeContentH2": "Un <span class='proffesions'>Análista de Datos</span> y <span class='proffesions'>Desarrolador de Software</span>",
+    "homeContentP": "Analista de datos con experiencia en Machine Learning e Inteligencia Artificial aplicados al análisis de datos en entornos de producción. Apasionado por la colaboración y el aprendizaje continuo.",
+    "aboutMeH1": "Sobre Mí",
+    "aboutMeP1": "Soy un Analista de Datos y Desarrollador con un enfoque en Machine Learning e Inteligencia Artificial, con experiencia en análisis de datos en entornos de producción. Manejo Python, modelado estadístico y visualización de datos, siempre comprometido en mantenerme actualizado con las últimas tendencias de la industria.", 
+    "aboutMeP2": "Valoro el trabajo en equipo y la colaboración, y me apasiona contribuir a soluciones impactantes. Además, disfruto apoyando y enseñando a otros mientras impulsamos la innovación en la ciencia de datos.",
+    "liPais": "<span>País: </span>México",
+    "liIdiomas": "<span>Idiomas: </span>Español, Inglés (C1), Alemán (B2), Francés (B2)",
+    "liHerramientas": "Herramientas: ",
+    "liLenProg": "Lenguajes de Programación: ",
+    "liRedes": "Redes: ",
+    "habilidadesH2": "Habilidades",
+    "foot": "© 2024 Mi Portafolio. Todos los derechos reservados."
+}

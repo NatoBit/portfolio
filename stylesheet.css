@@ -1,0 +1,368 @@
+:root {
+    --background-main-color: #343a40;
+    --header-main-color: #fafafa;
+    --header-secondary-color: #00B0FF;
+    --header-tertiary-color: #81D4FA;
+    --button-main-color: #212121;
+    --button-secondary-color: #848484;
+    /* --font-size-large: 1.5rem; */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fafafa;
+    background-color: var(--background-main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: none; /* Ocultar por defecto */
+}
+.active {
+    display: flex; /* Mostrar la sección activa */
+}   
+
+/* Botón de Idiomas */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.language-button {
+    background-color: var(--button-main-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.language-button:hover {
+    background-color: var(--button-secondary-color);
+}
+.language-options {
+    position: absolute;
+    right: 25px;
+    top: 12px;
+    background-color: var(--button-secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    max-width: 0;
+    transition: all 0.5s ease;
+}
+.language-options.show {
+    right: 60px;
+    background-color: var(--button-main-color);
+    max-width: 100px;
+}
+.language-option {
+    font-size: 12px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.language-option:hover {
+    background-color: var(--button-secondary-color);
+}
+
+/* Barra de Navegación */
+.header {
+    padding: 1.5%;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 20px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+.header-menu {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.header-menu-link {
+    /* font-family: ; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--header-main-color);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.header-menu-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--header-secondary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.header-menu-link:hover,
+.header-menu-link.active {
+    color: var(--header-secondary-color);
+}
+.header-menu-link:hover::after,
+.header-menu-link.active::after {
+    transform: scaleX(1);
+}
+
+/* Contenido */
+/* .section {
+    display: flex;
+} */
+ 
+ .structure {
+    display: flex;
+}
+.home-content {
+    flex: 1;
+    height: auto;
+    padding: 10vw;
+    user-select: none;
+}
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.home-content h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* .home-content h1 .stylized-name {
+    font-weight: 700;
+    color: var(--header-secondary-color);
+} */
+.home-content h2 .proffesions {
+    font-weight: 700;
+    color: var(--header-tertiary-color);
+}
+.home-content .heroline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* padding-right: 50px; */
+}
+
+/* Imagen Perfil */
+.side-img {
+    width: 30vw;
+    margin: auto;
+    flex: 1;
+    margin-top: 15vh;
+    position: relative;
+}
+.side-img img {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    /* La propiedad CSS object-fit: cover; se utiliza para controlar cómo una imagen o video reemplazado (es decir, un elemento <img> o <video>) debe redimensionarse 
+    para ajustarse a su contenedor. Específicamente, object-fit: cover; hace lo siguiente:
+    Mantiene la relación de aspecto de la imagen.
+    Escala la imagen para que cubra completamente el contenedor, tanto en ancho como en alto.
+    Si las proporciones de la imagen y el contenedor no coinciden exactamente, la imagen se recortará para llenar el contenedor sin dejar espacios vacíos.
+    El recorte se hace desde el centro, lo que significa que las partes que se recortan son generalmente los bordes. */
+    object-fit: cover;
+    border: 0.4rem solid var(--header-tertiary-color);
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-weight: 200;
+    font-size: 0.8rem;
+    list-style: none;
+}  
+footer li {
+    padding: 10px;
+}
+
+/* About Me */
+
+.aboutMe {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    color: white;
+}
+.aboutMe-content {
+    margin: auto 0px;
+    flex: 1;
+    height: auto;
+    padding: 10vw;
+    user-select: none;
+}
+.aboutMe-content h1 {
+    color: var(--header-tertiary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.aboutMe-details {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Tabla */
+.aboutMe-division {
+  display: flex;
+}
+.aboutMe-table {
+  width: 100%;
+  display: grid;
+  list-style-type: none;
+  font-size: 1rem;
+  grid-template-columns: repeat(2, 50%);
+}
+.aboutMe-table li{
+  padding: 20px;
+  position: relative;
+}
+.aboutMe-table li::after {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  height: 1px;
+  background: linear-gradient(to left, transparent, #ffffff77, transparent);
+  content: '';
+  bottom: 0px;
+}
+.aboutMe-table span {
+  color: var(--header-tertiary-color);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Redes Sociales */
+.social-item {
+    display: flex;
+    align-items: center;
+}
+.social-links {
+    display: flex;
+}
+.social-button {
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    /* cambia la apariencia del cursor del mouse cuando este pasa por encima del elemento al que se le aplica esta propiedad. Cambia el cursor normal (generalmente una 
+    flecha) a una mano con el dedo índice extendido. */
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.social-button:hover {
+    transform: translateY(-3px);
+}
+
+/* Habilidades */
+.skill-bar {
+    list-style-type: none;
+    width: calc(60% - 20px);
+    margin-left: 60px;
+}
+.skill-bar h2 {
+    text-align: center;
+    position: relative;
+    color: var(--header-tertiary-color);
+}
+.skill-bar li {
+    width: 100%;
+    padding: 10px;
+}
+.skill-bar p {
+    color: var(--header-main-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px;
+} 
+.skill-bar .bar {
+    width: 100%;
+    height: 5px;
+    background-color: #272c30;
+    border-radius: 20px;
+} 
+.active-bar {
+    background-color: var(--header-tertiary-color);
+    height: 100%;
+    width: auto;
+    border-radius: 20px;
+}
+.skill-bar h2::after {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #ffffff77, transparent);
+    content: '';
+    bottom: -18px;
+}
+
+@media (max-width: 1024px) {
+    .structure {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content {
+        padding: 0 10vw 0 10vw;
+        margin: 0;
+    }
+    .side-img {
+        order: -1;
+        width: 40vw;
+        height: 40vw;
+        margin: 5vh;
+        position: relative;
+    }
+    .side-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .skill-bar {
+        width: 100%;
+    }
+    .skill-list {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .skill-bar .bar {
+        width: 90%;
+    } 
+}
+
+@media (max-width: 780px) {
+    :root {
+        font-size: 10px;
+    }
+    .aboutMe-table {
+        grid-template-columns: repeat(1, 100%);
+    }
+    .aboutMe-table li{
+        padding: 10px;
+    }
+    .social-button {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15px;
+        height: 1px;
+    }
+    .skill-bar {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- El atributo rel en la etiqueta <link> es una parte estándar del lenguaje HTML que define la relación entre el documento actual y el recurso vinculado. Cambiar 
+    el nombre de este atributo por algo personalizado como font-awesome no funcionará porque los navegadores no reconocerán el atributo personalizado y no aplicarán el 
+    CSS correctamente. -->
+  <!-- "Normalize" en CSS es una técnica utilizada para crear una base consistente entre diferentes navegadores web. -->
+  <!-- Usando un CDN (Content Delivery Network) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- Dirección CDN (Content Delivery Network) que apunta a la versión 6.0.0-beta3 de Font Awesome. Esta biblioteca proporciona una gran variedad de iconos que puedes 
+    usar en tu sitio web sin necesidad de imágenes. Al incluir este enlace, estás cargando todos los estilos necesarios para usar los iconos de Font Awesome en tu página.-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <div class="language-switcher">
+    <button id="languageToggle" class="language-button">
+      <i class="fas fa-globe"></i> <!-- Ícono de globo -->
+    </button>
+    <div id="languageOptions" class="language-options">
+      <span class="language-option" data-lang="es">ES</span>
+      <span class="language-option"  data-lang="en">EN</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <nav class="header-menu">
+      <a id="menuInicio" class="header-menu-link" href="#">Inicio</a>
+      <a id="menuSobreMi" class="header-menu-link" href="#">Sobre Mí</a>
+      <a id="menuProyectos" class="header-menu-link" href="#" >Proyectos</a>
+    </nav>
+  </header>
+
+  <div id="inicio" class="section">
+    <div class="structure">
+      <div class="home-content">
+        <h1><span id="homeContentH1">¡Hola! soy</span> <span class="stylized-name">Daniel</span>,</h1>
+        <h2 id="homeContentH2">Un <span class="proffesions">Análista de Datos</span> y <span class="proffesions">Desarrolador de Software</span></h2>
+        <p id="homeContentP" class="heroline">Analista de datos especializado en Machine Learning e Inteligencia Artificial, con experiencia en análisis de datos en entornos de producción. 
+        Apasionado por la colaboración y el aprendizaje continuo.</p>
+      </div>
+      <div class="side-img">
+        <img src="/profile.jpg" alt="Daniel Elizalde" class="profile-pic">    
+      </div>
+    </div>
+  </div>
+  
+  <div id="sobreMi" class="section">
+    <div class="aboutMe-content">
+
+      <h1 id="aboutMeH1" class="heading">Sobre Mí</h1>
+
+      <div class="structure">
+
+        <div class="aboutMe-divison">
+
+          <p class="aboutMe-details">
+          <span id="aboutMeP1"> Soy un Analista de Datos y Desarrollador con un enfoque en Machine Learning e Inteligencia Artificial, con experiencia en análisis de datos en entornos de producción. 
+              Manejo Python, modelado estadístico y visualización de datos, siempre comprometido en mantenerme actualizado con las últimas tendencias de la industria. </span>
+          <br>
+          <br>
+          <span id="aboutMeP2"> Valoro el trabajo en equipo y la colaboración, y me apasiona contribuir a soluciones impactantes. Además, disfruto apoyando y enseñando a otros mientras 
+              impulsamos la innovación en la ciencia de datos. </span>
+          </p>
+
+          <div class="aboutMe-table">
+            <li id="liPais"><span>País: </span>México</li>
+            <li id="liIdiomas"><span>Idiomas: </span>Español, Inglés (C1), Alemán (B2), Francés (B2)</li>
+            <li><span id="liHerramientas">Herramientas: </span>Git, SQL, Tableau</li>
+            <li><span id="liLenProg">Lenguajes de Programación: </span>Python, R</li>
+            <li ><span>Email: </span>inq.daniel_elizalde@outlook.com</li>
+            <li class="social-item"><span id="liRedes">Redes: </span>
+              <div class="social-links">
+                <a href="https://github.com/NatoBit" target="_blank" class="social-button">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/daniel-elizalde-ml" target="_blank" class="social-button">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>  
+            </li>
+          </div>
+          
+        </div>
+
+        <div class="skill-bar">
+          <h2 id="habilidadesH2">Habilidades</h2>
+          <div class="skill-list">
+            <li>
+              <p>Python</p>
+              <div class="bar">
+                <div class="active-bar" style="width:80%"></div>
+              </div>
+            </li>
+            <li>
+              <p>R</p>
+              <div class="bar">
+                <div class="active-bar" style="width:60%"></div>
+              </div>
+            </li>
+            <li>
+              <p>SQL</p>
+              <div class="bar">
+                <div class="active-bar" style="width:75%"></div>
+              </div>
+            </li>
+            <li>
+              <p>NumPy</p>
+              <div class="bar">
+                <div class="active-bar" style="width:70%"></div>
+              </div>
+            </li>
+            <li>
+              <p>Scikit-learn</p>
+              <div class="bar">
+                <div class="active-bar" style="width:70%"></div>
+              </div>
+            </li>
+            <li>
+              <p>TensorFlow</p>
+              <div class="bar">
+                <div class="active-bar" style="width:60%"></div>
+              </div>
+            </li>
+          </div>
+        </div>
+
+      </div>  
+      
+    </div>
+  </div>
+
+  <footer>
+      <li id="foot">© 2024 Mi Portafolio. Todos los derechos reservados.</li>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+        <!-- <div class="about-me-divison">
+          
+        
+          

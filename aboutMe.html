@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- El atributo rel en la etiqueta <link> es una parte estándar del lenguaje HTML que define la relación entre el documento actual y el recurso vinculado. Cambiar 
+     el nombre de este atributo por algo personalizado como font-awesome no funcionará porque los navegadores no reconocerán el atributo personalizado y no aplicarán el 
+     CSS correctamente. -->
+    <!-- "Normalize" en CSS es una técnica utilizada para crear una base consistente entre diferentes navegadores web. -->
+    <!-- Usando un CDN (Content Delivery Network) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Dirección CDN (Content Delivery Network) que apunta a la versión 6.0.0-beta3 de Font Awesome. Esta biblioteca proporciona una gran variedad de iconos que puedes 
+     usar en tu sitio web sin necesidad de imágenes. Al incluir este enlace, estás cargando todos los estilos necesarios para usar los iconos de Font Awesome en tu página.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="language-switcher">
+        <button id="languageToggle" class="language-button">
+            <i class="fas fa-globe"></i> <!-- Ícono de globo -->
+        </button>
+        <div id="languageOptions" class="language-options">
+            <span class="language-option" data-lang="es">ES</span>
+            <span class="language-option"  data-lang="en">EN</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="header-menu">
+            <a id="menuInicio" class="header-menu-link active" href="index.html" >Inicio</a>
+            <a id="menuSobreMi" class="header-menu-link" href="index.html" >Sobre Mí</a>
+            <a id="menuProyectos" class="header-menu-link" href="index.html" >Proyectos</a>
+        </nav>
+    </header>
+
+    <!-- <div class="home-body">
+        <div class="home-content">
+            <h1><span id="homeContentH1">¡Hola! soy</span> <span class="stylized-name">Daniel</span>,</h1>
+            <h2 id="homeContentH2">Un <span class="proffesions">Análista de Datos</span> y <span class="proffesions">Desarrolador de Software</span></h2>
+            <p id="homeContentP" class="heroline">Analista de datos especializado en Machine Learning e Inteligencia Artificial, con experiencia en análisis de datos en entornos de producción. 
+                Apasionado por la colaboración y el aprendizaje continuo.</p>
+        </div>
+        <div class="side-img">
+            <img src="/profile.jpg" alt="Daniel Elizalde" class="profile-pic">    
+        </div>
+    </div> -->
+    
+    <footer>
+        <li>Copyright @ 2024 Daniel E</li>
+    </footer>
+
+</body>
+</html>
